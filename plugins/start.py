@@ -83,7 +83,7 @@ async def stream_start(client, message):
     params = {'u': user_id, 'w': str(log_msg.id), 's': str(0), 't': str(0)}
     url1 = f"{urlencode(params)}"
     link = await encode(url1)
-    encoded_url = f"{LINK_URL}?Tech_VJ={link}"
+    encoded_url = f"{LINK_URL}?botsworldtar={link}"
     rm=InlineKeyboardMarkup([[InlineKeyboardButton("🖇️ Open Link", url=encoded_url)]])
     await message.reply_text(text=f"<code>{encoded_url}</code>", reply_markup=rm)
 
